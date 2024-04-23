@@ -2,7 +2,7 @@
 # It still not working, try running the script as root.
 
 ## Build the image first
-### docker build -t bebop2_image .
+### docker build -t ros-bebop-autonomy .
 ## then run this script
 
 xhost local:root
@@ -20,7 +20,7 @@ docker run -it \
     --volume="$XAUTH:$XAUTH" \
     --net=host \
     --privileged \
-    bebop2_image \
+    ros-bebop-autonomy \
     bash
 
 echo "Successfully ran the docker container"
