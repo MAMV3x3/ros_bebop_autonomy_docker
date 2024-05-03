@@ -24,7 +24,7 @@ docker build -t ros_bebop_autonomy .
 3. Run the Docker container with GUI support:
 
 ```bash
-./run_docker.sh
+./run_docker.bash
 ```
 
 ### Notes 📝
