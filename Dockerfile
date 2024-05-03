@@ -19,6 +19,9 @@ WORKDIR /root/bebop_ws
 # Clone Bebop Autonomy repository
 RUN git clone https://github.com/AutonomyLab/bebop_autonomy.git src/bebop_autonomy
 
+# Create scripts directory
+RUN mkdir -p src/bebop_autonomy/scripts
+
 # Clone joy2bebop.py script
 RUN wget https://raw.githubusercontent.com/MAMV3x3/ros_bebop_autonomy_docker/main/source/joy2bebop.py -O src/bebop_autonomy/scripts/joy2bebop.py
 
