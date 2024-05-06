@@ -6,7 +6,6 @@ RUN apt-get update && apt-get install -y \
     git \
     nano \
     wget \
-    python3 \
     python3-pip \
     build-essential \
     python-rosdep \
